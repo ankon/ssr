@@ -129,13 +129,13 @@ if [ x"$WITH_GLINJECT" == x"TRUE" ]; then
 	fi
 fi
 
-echo "Installing ..."
-sudo make install
+# echo "Installing ..."
+# sudo make install
 
 echo "Leaving build-release directory ..."
 cd ..
 
-echo "Running post-install script ..."
-sudo ./postinstall
+# echo "Running post-install script ..."
+# sudo ./postinstall
 
 echo "Done."
