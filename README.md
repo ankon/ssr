@@ -176,8 +176,8 @@ Extra dependencies for 32-bit GLInject on 64-bit systems:
 
 ### Fedora
 
-    sudo yum install qt4 qt4-devel ffmpeg-devel alsa-lib-devel pulseaudio-libs-devel jack-audio-connection-kit-devel \
-    make gcc gcc-c++ mesa-libGL-devel mesa-libGLU-devel libX11-devel libXext-devel libXfixes-devel
+    sudo dnf install qt5-qtbase qt5-qtbase-devel qt5-qtx11extras qt5-qtx11extras-devel q5-linguist cmake ffmpeg-devel alsa-lib-devel pulseaudio-libs-devel pipewire-jack-audio-connection-kit-devel \
+    make gcc gcc-c++ mesa-libGL-devel mesa-libGLU-devel libX11-devel libXext-devel libXfixes-devel libv4l-devel
 
 Some packages (e.g. ffmpeg) are not in the official repository, but can be installed from the [RPM Fusion](http://rpmfusion.org/) repository.  You can add the RPM Fusion repository with this command:
 
@@ -186,8 +186,8 @@ Some packages (e.g. ffmpeg) are not in the official repository, but can be insta
 
 Extra dependencies for 32-bit GLInject on 64-bit systems:
 
-    sudo yum install glibc-devel.i686 libgcc.i686 mesa-libGL-devel.i686 mesa-libGLU-devel.i686 \
-    libX11-devel.i686 libXext-devel.i686 libXfixes-devel.i686
+    sudo dnf install glibc-devel.i686 libgcc.i686 mesa-libGL-devel.i686 mesa-libGLU-devel.i686 \
+    libX11-devel.i686 libXext-devel.i686 libXfixes-devel.i686 libv4l-devel.i686
 
 Other files you may want to read
 --------------------------------
