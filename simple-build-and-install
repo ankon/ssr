@@ -117,13 +117,13 @@ make -j "$( nproc )"
 
 if [ x"$WITH_GLINJECT" == x"TRUE" ]; then
 	echo "Removing old GLInject libraries ..."
-	sudo rm -f "/usr/lib/libssr-glinject."*
-	sudo rm -f "/usr/lib64/libssr-glinject."*
-	sudo rm -f "/usr/lib/x86_64-linux-gnu/libssr-glinject."*
+	sudo rm -f "$PREFIX/lib/libssr-glinject."*
+	sudo rm -f "$PREFIX/lib64/libssr-glinject."*
+	sudo rm -f "$PREFIX/lib/x86_64-linux-gnu/libssr-glinject."*
 	if [ x"$ENABLE_32BIT_GLINJECT" == x"TRUE" ]; then
-		sudo rm -f "/usr/lib32/libssr-glinject."*
-		sudo rm -f "/usr/lib/i386-linux-gnu/libssr-glinject."*
-		sudo rm -f "/usr/lib/i686-linux-gnu/libssr-glinject."*
+		sudo rm -f "$PREFIX/lib32/libssr-glinject."*
+		sudo rm -f "$PREFIX/lib/i386-linux-gnu/libssr-glinject."*
+		sudo rm -f "$PREFIX/lib/i686-linux-gnu/libssr-glinject."*
 	fi
 fi
 
