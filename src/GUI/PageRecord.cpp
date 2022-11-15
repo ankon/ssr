@@ -162,7 +162,7 @@ PageRecord::PageRecord(MainWindow* main_window)
 	m_page_started = false;
 	m_input_started = false;
 	m_output_started = false;
-	m_previewing = false;
+	m_previewing = true;
 
 	m_schedule_active = false;
 	m_schedule_time_zone = SCHEDULE_TIME_ZONE_LOCAL;
